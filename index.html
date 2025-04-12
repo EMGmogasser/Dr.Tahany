@@ -975,6 +975,17 @@
                 w = 255; h = 155;
             }
 
+
+            // إنشاء عنصر audio لتشغيل الأغنية
+            var audio = document.createElement('audio');
+            audio.src = `Fly Me to the Moon.mp3`; // يمكنك استبدال هذا الرابط برابط الأغنية المطلوبة
+            audio.autoplay = true;
+            audio.loop = true;
+            audio.volume = 0.5; // يمكنك تعديل مستوى الصوت (0 إلى 1)
+            
+            // إضافة عنصر الصوت إلى body
+            document.body.appendChild(audio);
+
             var ifrm = document.createElement(&quot;p&quot;);
 
             ifrm.textContent = `Happy Birthday, Dr. Tahani ! 😍🥰
